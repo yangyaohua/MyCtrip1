@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>MyCtrip</display-name>
+
+	<servlet>
+		<description>JAX-RS Tools Generated - Do not modify</description>
+		<servlet-name>JAX-RS Servlet</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JAX-RS Servlet</servlet-name>
+		<url-pattern>/jaxrs/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ChangePasswordServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.ChangePasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePasswordServlet</servlet-name>
+		<url-pattern>/ChangePasswordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SessionIdServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.SessionIdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SessionIdServlet</servlet-name>
+		<url-pattern>/SessionIdServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>QueryTicketServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.QueryTicketServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryTicketServlet</servlet-name>
+		<url-pattern>/QueryTicketServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>BookTicketServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.BookTicketServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookTicketServlet</servlet-name>
+		<url-pattern>/BookTicketServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PayForTicketServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.PayForTicketServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PayForTicketServlet</servlet-name>
+		<url-pattern>/PayForTicketServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>IsLoginServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.IsLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IsLoginServlet</servlet-name>
+		<url-pattern>/IsLoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ExitLoginServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.ExitLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExitLoginServlet</servlet-name>
+		<url-pattern>/ExitLoginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>BookStateServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.BookStateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookStateServlet</servlet-name>
+		<url-pattern>/BookStateServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetTicketPriceServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.GetTicketPriceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTicketPriceServlet</servlet-name>
+		<url-pattern>/GetTicketPriceServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SessionPieceServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.SessionPieceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SessionPieceServlet</servlet-name>
+		<url-pattern>/SessionPieceServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UploadDataServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.UploadDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadDataServlet</servlet-name>
+		<url-pattern>/UploadDataServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>QueryAndroidTaskServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.QueryAndroidTaskServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QueryAndroidTaskServlet</servlet-name>
+		<url-pattern>/QueryAndroidTaskServlet</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<servlet-class>com.yyh.servlet.FirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/FirstServlet</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
