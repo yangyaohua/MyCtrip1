@@ -19,24 +19,12 @@ public class LoginServlet extends BaseServlet {
 	protected void dispatchTask(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		
-		req.getSession().setAttribute(Constants.CURRENT_TASK, "0");
-
 		String userId = req.getParameter("userId");
 		String password = req.getParameter("password");
-		
-		//此处判断是电脑还是手机
-		String type = req.getParameter("type");
-		ServletContext application = getServletContext();
-		if (type.equals("PC")) {
-			application.setAttribute(Constants.PC, req.getSession().getId());
-		}else if (type.equals("ANDROID")) {
-			application.setAttribute(Constants.ANDROID, req.getSession().getId());
-		}
-		
+
 		HttpSession session = req.getSession();
 		session.setAttribute(Constants.USER_ID, userId);
-		String JSESSIONID = session.getId();
-		System.out.println("LoginServlet JSESSIONID = " + session.getId() + " current_task = " + req.getSession().getAttribute(Constants.CURRENT_TASK));
+		System.out.println("LoginServlet JSESSIONID = " + session.getId());
 		
 		PrintWriter writer = resp.getWriter();
 		boolean login = UserDao.login(userId, password);

@@ -36,15 +36,6 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>SessionIdServlet</servlet-name>
-		<servlet-class>com.yyh.servlet.SessionIdServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SessionIdServlet</servlet-name>
-		<url-pattern>/SessionIdServlet</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
 		<servlet-name>QueryTicketServlet</servlet-name>
 		<servlet-class>com.yyh.servlet.QueryTicketServlet</servlet-class>
 	</servlet>
@@ -110,15 +101,6 @@
 	</servlet-mapping>
 
 
-	<servlet>
-		<servlet-name>SessionPieceServlet</servlet-name>
-		<servlet-class>com.yyh.servlet.SessionPieceServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>SessionPieceServlet</servlet-name>
-		<url-pattern>/SessionPieceServlet</url-pattern>
-	</servlet-mapping>
-	
 	<servlet>
 		<servlet-name>UploadDataServlet</servlet-name>
 		<servlet-class>com.yyh.servlet.UploadDataServlet</servlet-class>

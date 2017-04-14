@@ -21,8 +21,6 @@ public class BookTicketServlet extends BaseServlet {
 	protected void dispatchTask(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 
-		req.getSession().setAttribute(Constants.CURRENT_TASK, "2");
-
 		String cnumber = (String) req.getSession().getAttribute(Constants.USER_ID);
 		String tid = (String) req.getSession().getAttribute(Constants.TID);
 		System.out.println("BookTicketServlet JSESSIONID = " + req.getSession().getId() + "cnumber = " + cnumber + "tid = " + tid);

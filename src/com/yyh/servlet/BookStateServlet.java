@@ -18,7 +18,6 @@ public class BookStateServlet extends BaseServlet {
 	protected void dispatchTask(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		System.out.println("BookStateServlet JSESSIONID = " + req.getSession().getId());
-		req.getSession().setAttribute(Constants.CURRENT_TASK, "1");
 
 		String tid = req.getParameter("tid");
 		HttpSession session = req.getSession();

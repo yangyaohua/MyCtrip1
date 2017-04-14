@@ -21,8 +21,6 @@ public class PayForTicketServlet extends BaseServlet {
 	protected void dispatchTask(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 
-		req.getSession().setAttribute(Constants.CURRENT_TASK, "3");
-
 		System.out.println("PayForTicketServlet JSESSIONID = " + req.getSession().getId());
 
 		String tid = (String) req.getSession().getAttribute(Constants.TID);
